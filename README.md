@@ -18,7 +18,7 @@ with NPM 3 or higher.
 ## Installation
 
 ### NodeJS and NPM
-Access the [NodeJS](https://nodejs.org/en/) official website and download the "Latest Features". Don't forget to check the npm (node package modules) during instalation.
+Access the [NodeJS](https://nodejs.org/en/) official website and download the "Latest Features". Don't forget to check the npm (node package modules) during installation.
 
 ### Sass
 

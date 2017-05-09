@@ -1,0 +1,32 @@
+.table {
+    th{
+        padding:0.75rem 0.35rem;
+    }
+
+    td{
+        font-size: 14px;
+        padding:0.35rem;
+        vertical-align: middle;
+
+        &:first-child {
+            width: 155px;
+            padding-left: 22px;
+        }
+
+        &:last-child{
+            padding-right: 22px;
+        }
+    }
+
+    .btn {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+        line-height: 25px;
+        font-size: 13px;
+
+        &::after{
+            display: none;
+        }
+    }
+}

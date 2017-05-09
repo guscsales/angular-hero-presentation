@@ -1,0 +1,53 @@
+<div id="wrapper">
+  <header>
+    <div class="logo"></div>
+    <span class="greetings">{{appName}} - Bem vindo Gustavo</span>
+    <ul class="header-list">
+      <li data-toggle="tooltip" data-placement="bottom" title="Preferências">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </li>
+      <li class="user-opts dropdown">
+        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span>Gustavo Sales</span>
+          <img src="https://scontent-gru2-1.cdninstagram.com/t51.2885-19/s150x150/12558415_1668881950035986_508864783_a.jpg" alt="User Options"
+          />
+        </div>
+        <div class="dropdown-menu dropdown-menu-right">
+          <h6 class="dropdown-header">Opções Rápidas</h6>
+          <button class="dropdown-item" type="button">Ver Perfil</button>
+          <button class="dropdown-item" type="button">Preferências</button>
+          <div class="dropdown-divider"></div>
+          <button class="dropdown-item" type="button">Sair</button>
+        </div>
+      </li>
+    </ul>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li>
+        <a routerLink="/">
+          <i class="fa fa-bar-chart" aria-hidden="true"></i> Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0)">
+          <i class="fa fa-user" aria-hidden="true"></i> Heróis
+        </a>
+        <ul class="sub">
+          <li>
+            <a routerLink="/heros">Gerenciar</a>
+          </li>
+          <li>
+            <a routerLink="/hero/new">Novo</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <router-outlet></router-outlet>
+  </main>
+  <footer>
+    M.A.R.V.I.N. - Criado por <a href="http://hebsix.com.br" target="_blank">Agência Hebsix</a> - Copyright &copy; 2017
+  </footer>
+</div>

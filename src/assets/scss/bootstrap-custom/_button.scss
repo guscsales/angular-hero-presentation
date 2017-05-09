@@ -1,0 +1,11 @@
+.btn{
+    border-radius: $borderRadius;
+    cursor:pointer;
+
+    &:focus,
+    &:active{
+        outline: none!important;
+        box-shadow: none!important;
+        -webkit-box-shadow: none!important;
+    }
+}

@@ -1,0 +1,32 @@
+.page-link {
+    padding: 3.5px 9px;    
+    font-size:13px;
+    color:$middleGray2;
+
+    &:hover{
+        color:$mainComplementColor;
+    }
+}
+
+.page-item{
+    cursor:pointer;
+    
+    &.active {
+        .page-link {
+            background-color: $mainColor;
+            border-color: $mainColor;
+
+            &:hover{
+                background-color: $mainColor;
+                border-color: $mainColor;
+            }
+        }
+    }
+}
+
+.page-item:first-child,
+.page-item:last-child {
+    .page-link {
+        border-radius: $borderRadius;
+    }
+}

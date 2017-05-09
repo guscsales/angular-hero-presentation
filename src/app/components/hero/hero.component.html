@@ -1,0 +1,56 @@
+<header>
+  <h1>
+    {{title}}
+    <small>{{subTitle}}</small>
+  </h1>
+</header>
+
+<section>
+  <div class="panel">
+
+    <div class="panel-header">
+      <h2 class="panel-title ng-binding"><i class="fa fa-list" aria-hidden="true"></i> Listagem</h2>
+    </div>
+
+    <div class="panel-body data-service">
+      <div class="row">
+        <div class="col-12" *ngIf="heroes.length > 0">
+
+          <table class="table table-hover data-service-table">
+            <thead>
+              <tr>
+                <th *ngIf="ds.hasActions">&nbsp;</th>
+                <th *ngFor="let column of ds.columns; let i = index">
+                  {{column.name}}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let hero of heroes">
+                <td *ngIf="ds.hasActions">
+                  <a routerLink="/hero/{{hero.id}}" class="btn btn-success" data-toggle="tooltip" data-placement="right" title="Mais Detalhes"><i class="fa fa-info" aria-hidden="true"></i></a>
+                  <a routerLink="/hero/edit/{{hero.id}}" class="btn btn-info" data-toggle="tooltip" data-placement="right" title="Editar"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                  <button type="button" class="btn btn-warning" data-toggle="tooltip" data-placement="right" title="Remover" (click)="remove(hero.id)"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </td>
+                <td>{{hero.id}}</td>
+                <td>{{hero.name}}</td>
+                <td>{{hero.codename}}</td>
+                <td>{{hero.email}}</td>
+                <td>{{hero.created | date:'dd/MM/yyyy HH:mm'}}</td>
+                <td>{{hero.updated | date:'dd/MM/yyyy HH:mm'}}</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+
+        <div class="col-12" *ngIf="heroes.length == 0">
+          <div class="alert alert-info">
+            Nenhum registro foi encontrado.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

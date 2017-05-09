@@ -1,0 +1,20 @@
+%background-props{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin bg-cover ($src){
+    background-image: url($src);
+    background-size: cover;
+    @extend %background-props;
+}
+
+@mixin bg-image ($src, $width, $height){
+    background-image: url($src);
+
+    @if $width && $height {
+        background-size: $width $height;
+    }
+
+    @extend %background-props;
+}

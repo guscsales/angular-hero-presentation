@@ -1,0 +1,16 @@
+.mvn-remove-border-top{
+    tr:first-child{
+        th, td{
+            border-top: none;
+        }
+    }
+    
+}
+
+.mvn-page-padding{
+    padding: $mainSpacingVerticalHalf $mainSpacingHorizontal;
+}
+
+.c-pointer{
+    cursor:pointer;
+}

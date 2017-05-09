@@ -1,0 +1,41 @@
+.data-service {
+    $gridSpacing: -5px;
+    .row {
+        margin-left: $gridSpacing;
+        margin-right: $gridSpacing;
+    }
+    div[class^="col-"] {
+        padding-left: $gridSpacing * -1;
+        padding-right: $gridSpacing * -1;
+    }
+    .data-service-results {
+        float: left;
+        font-size: 12px;
+        line-height: 67px;
+    }
+    .data-service-pagination {
+        float: right;
+    }
+    .data-service-filters {
+        margin-bottom: 40px;
+        .btn {
+            width: 100%;
+            margin-top: 28px;
+            height: 30px;
+            line-height: normal;
+            padding: 0;
+        }
+    }
+    .data-service-table {
+        thead {
+            tr {
+                th {
+                    .fa {
+                        float: right;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+}

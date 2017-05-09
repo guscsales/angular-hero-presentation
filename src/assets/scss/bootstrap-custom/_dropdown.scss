@@ -1,0 +1,20 @@
+.dropdown-menu{
+    cursor: default;
+    border-radius: $borderRadius;
+}
+
+.dropdown-header{
+    font-size: 12px;
+}
+
+.dropdown-item{
+    height:auto;
+    line-height: normal;
+    font-size: 14px;
+    cursor:pointer;
+}
+
+.dropdown-header,
+.dropdown-divider{
+    cursor: default;
+}

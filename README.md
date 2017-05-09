@@ -4,6 +4,8 @@ I have created this project to explain the simple features of Angular and how th
 
 Note which this project uses Angular-CLI. So before follow the steps below, it has been necessary install the core of Angular.
 
+This project uses [M.A.R.V.I.N.](https://github.com/hebsix/marvin-dashboard) dashboard template by Agência Hebsix.
+
 ## Some Features
 
 * CRUD using Components

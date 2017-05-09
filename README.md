@@ -1,7 +1,5 @@
 # Angular Hero Presentation
 
-[![Build Status][travis-badge]][travis-badge-url]
-
 I have created this project to explain the simple features of Angular and how these works, using also an image presentation.
 
 Note which this project uses Angular-CLI. So before follow the steps below, it has been necessary install the core of Angular.
